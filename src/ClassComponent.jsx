@@ -13,7 +13,7 @@ class ClassComponent extends Component {
             .then((res) => res.json())
             .then((movie) => {
 
-                console.log("movie:", movie.results)
+                
                 this.setState({ movies: movie.results })
             })
             .catch((Error) => console.log(Error));

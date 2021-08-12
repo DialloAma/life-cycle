@@ -20,9 +20,9 @@ function FunctionComponent () {
         <div>
                 <h1>All movies fetched by function component</h1>
                 {
-                movies.map((movi)=>{
+                movies.map((movi,index)=>{
                         return (
-                            <div key={movi.id} style={{ border: '1px solid black',marginLeft:'20rem',marginRight:'20rem',marginTop:'1rem',paddingTop:'1rem' }}>
+                            <div key={index} style={{ border: '1px solid black',marginLeft:'20rem',marginRight:'20rem',marginTop:'1rem',paddingTop:'1rem' }}>
                                <img src={movi.multimedia.src} /> 
                                 <div>{movi.display_title}</div>
                                 <div>{movi.critics_pick}</div>

@@ -25,7 +25,7 @@ class ClassComponent extends Component {
                 {
                     this.state.movies.map((mov, id) => {
                         return (
-                            <div key={mov.id} style={{ border: '1px solid black',marginLeft:'20rem',marginRight:'20rem',marginTop:'1rem',paddingTop:'1rem' }}>
+                            <div key={id} style={{ border: '1px solid black',marginLeft:'20rem',marginRight:'20rem',marginTop:'1rem',paddingTop:'1rem' }}>
                                <img src={mov.multimedia.src} alt="my_movies" /> 
                                 <div>{mov.display_title}</div>
                                 <div>{mov.critics_pick}</div>
